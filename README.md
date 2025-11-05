@@ -1,67 +1,70 @@
-# 🧩 Microservices API Gateway (by Alan Isaac Toro Holguín)
+# 🧩 Microservicios API (por Emanuel Buriticá)
 
-This project is an **enhanced and extended version** of the original repository [GuilloBurgos/microservicio_api_gateway](https://github.com/GuilloBurgos/microservicio_api_gateway).
-
-It demonstrates a **microservices architecture** built with an **API Gateway** that centralizes communication between independent services — such as the **Users Service** and **Products Service** — and a **React-based Frontend**.  
-This version includes full frontend integration, service configuration improvements, and several optimizations for scalability and maintainability.
+Este proyecto demuestra una **arquitectura basada en microservicios** construida con un **API Gateway** que centraliza la comunicación entre servicios independientes, como el **Servicio de Usuarios** y el **Servicio de Productos**, junto con un **Frontend desarrollado en React**.  
+Esta versión incluye **integración completa del frontend**, **mejoras en la configuración de los servicios** y varias **optimizaciones orientadas a la escalabilidad y mantenibilidad**.
 
 ---
 
-## 🚀 Main Technologies
+## 🚀 Tecnologías Principales
 
 - **Node.js** (API Gateway)
 - **Express.js**
 - **MySQL / MariaDB**
 - **React + Vite**
 - **TailwindCSS**
-- **Docker (optional)**
+- **Docker (opcional)**
 
 ---
 
-## 🧱 Project Structure
-```
-├── api-gateway/ # Central gateway that routes requests to microservices
-├── products-service/ # Handles product-related operations
-├── users-service/ # Manages user authentication and data
-└── Frontend/ # React + Vite frontend consuming the gateway API
-```
-
+## 🧱 Estructura del Proyecto
+├── api-gateway/ # Gateway central que enruta las solicitudes a los microservicios
+├── products-service/ # Gestiona las operaciones relacionadas con productos
+├── users-service/ # Administra la autenticación y los datos de los usuarios
+└── Frontend/ # Frontend en React + Vite que consume la API del gateway
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Instalación y Configuración
 
-### 1. Clone the repository
+### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/AlanIsaacToroHolguin/Microservices-Api-Gateway.git
-cd Microservices-Api-Gateway
+git clone https://github.com/SrAlucart/APIS-MICROSERVICIOS-FRONT.git
+cd APIS-MICROSERVICIOS-FRONT
 ```
-### 📦 Install Dependencies
+### 2. Configurar las bases de datos
+#### MySQL / MariaDB (Servicio de Usuarios)
+Crea una base de datos llamada `node_mvc` (o el nombre que prefieras, asegurándote de actualizar el archivo `.env` en consecuencia).
 
-Run the following command inside each folder (`api-gateway`, `users-service`, `products-service`, and `Frontend/Frontend`):
+```sql
+CREATE DATABASE node_mvc;
+```
+#### MongoDB (Servicio de Productos)
+Asegúrate de tener MongoDB instalado y en ejecución. Crea una base de datos
+llamada `productos_db` (o el nombre que prefieras, asegurándote de actualizar el archivo `.env` en consecuencia).
+``` 
+## 📦 Instalar dependencias
 
-```bash
+Ejecuta el siguiente comando dentro de cada carpeta (api-gateway, users-service, products-service y Frontend/Frontend):
+
 npm install
 
-# API Gateway
+## ▶️ Ejecución de los servicios
+🧠 API Gateway
 cd api-gateway
 node index.js
-http://localhost:3000
+# Disponible en: http://localhost:3000
 
-# Users Service
+## 👤 Servicio de Usuarios
 cd users-service
 node index.js
-http://localhost:3001
+# Disponible en: http://localhost:3001
 
-# Products Service
+## 📦 Servicio de Productos
 cd products-service
 node index.js
-http://localhost:3002
+# Disponible en: http://localhost:3002
 
-# Frontend
+## 💻 Frontend
 cd Frontend/Frontend
 npm run dev
-The frontend will run on http://localhost:5173
-               
-```
-
+# El frontend se ejecutará en: http://localhost:5173
