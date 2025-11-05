@@ -166,6 +166,9 @@ const App = () => {
           <h1 className="text-4xl font-bold text-white mb-2">
             Sistema de Microservicios
           </h1>
+              <p className="text-sm text-purple-300 tracking-wide">
+      🚀 Desarrollado por <span className="font-semibold text-purple-400">Emanuel Buritica y Wilper Pineda</span> — 2025
+    </p>
           <p className="text-purple-200">
             Gestión de Usuarios y Productos
           </p>
