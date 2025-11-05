@@ -63,7 +63,6 @@ cd users-service
 node index.js
 # Disponible en: http://localhost:3001
 ``` 
-```bash
 ## 📦 Servicio de Productos
 ```bash
 cd products-service
