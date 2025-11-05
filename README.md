@@ -41,7 +41,15 @@ CREATE DATABASE node_mvc;
 #### MongoDB (Servicio de Productos)
 Asegúrate de tener MongoDB instalado y en ejecución. Crea una base de datos
 llamada `productos_db` (o el nombre que prefieras, asegurándote de actualizar el archivo `.env` en consecuencia).
-``` 
+
+### 3. Configurar variables de entorno
+Crea un archivo `.env` en las carpetas `users-service` y `products-service` con las siguientes variables:
+#### users-service/.env
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=yourpassword
+DB_NAME=node_mvc
 ```
 ### 📦 Instalar dependencias
 
