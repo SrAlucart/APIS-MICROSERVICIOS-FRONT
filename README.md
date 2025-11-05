@@ -42,29 +42,37 @@ CREATE DATABASE node_mvc;
 Asegúrate de tener MongoDB instalado y en ejecución. Crea una base de datos
 llamada `productos_db` (o el nombre que prefieras, asegurándote de actualizar el archivo `.env` en consecuencia).
 ``` 
-## 📦 Instalar dependencias
+```
+### 📦 Instalar dependencias
 
 Ejecuta el siguiente comando dentro de cada carpeta (api-gateway, users-service, products-service y Frontend/Frontend):
-
+```bash
 npm install
-
+``` 
 ## ▶️ Ejecución de los servicios
+
 🧠 API Gateway
+```bash
 cd api-gateway
 node index.js
 # Disponible en: http://localhost:3000
-
+```   
 ## 👤 Servicio de Usuarios
+```bash
 cd users-service
 node index.js
 # Disponible en: http://localhost:3001
-
+``` 
+```bash
 ## 📦 Servicio de Productos
+```bash
 cd products-service
 node index.js
 # Disponible en: http://localhost:3002
-
+``` 
 ## 💻 Frontend
+```bash
 cd Frontend/Frontend
 npm run dev
 # El frontend se ejecutará en: http://localhost:5173
+``` 
