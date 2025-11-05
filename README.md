@@ -1,4 +1,4 @@
-# 🧩 Microservicios API (por Emanuel Buriticá)
+# 🧩 Microservicios API
 
 Este proyecto demuestra una **arquitectura basada en microservicios** construida con un **API Gateway** que centraliza la comunicación entre servicios independientes, como el **Servicio de Usuarios** y el **Servicio de Productos**, junto con un **Frontend desarrollado en React**.  
 Esta versión incluye **integración completa del frontend**, **mejoras en la configuración de los servicios** y varias **optimizaciones orientadas a la escalabilidad y mantenibilidad**.
